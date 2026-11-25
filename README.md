@@ -16,7 +16,6 @@ Es una **app web instalable (PWA)**: no necesita compilación ni tienda de aplic
 | `manifest.webmanifest` | Nombre, colores e iconos de la app instalada. |
 | `sw.js` | Guarda la app para que funcione sin internet. |
 | `icons/` | Iconos de la app. |
-| `.github/workflows/pages.yml` | Publica la app en GitHub Pages al subir cambios. |
 
 ## Instalarla en el móvil
 
@@ -34,7 +33,7 @@ Una vez instalada se abre a pantalla completa y funciona sin conexión, salvo la
 
 ## Publicación automática
 
-Cada vez que cambies `index.html` y lo subas a la rama `main`, la pestaña **Actions** publica la nueva versión en GitHub Pages. No hay que hacer nada más.
+GitHub Pages publica desde la rama `main`: al subir un cambio, la nueva versión aparece sola en un minuto. No hay que hacer nada más.
 
 ## Notas
 
