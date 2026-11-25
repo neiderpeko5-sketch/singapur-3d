@@ -4,20 +4,20 @@ App de juegos 3D para aprender matemáticas con el método Singapur, pensada par
 
 Es una **app web instalable (PWA)**: no necesita compilación ni tienda de aplicaciones. Se instala desde el navegador y luego se abre como cualquier app, incluso sin conexión.
 
-## Abrir la app
-
-👉 https://neiderpeko5-sketch.github.io/singapur-3d/
-
 ## Qué hay en este repositorio
 
 | Archivo | Para qué sirve |
 | --- | --- |
-| `index.html` | Toda la app (juego, escena 3D, voz y sonido). |
+| `index.html` | Cargador: une las partes de `src/` y muestra la app. |
+| `app.html` | La app completa (juego, escena 3D, voz y sonido), para editar. |
+| `src/c1.txt` … `src/c7.txt` | La app comprimida y troceada; el cargador la une. |
 | `manifest.webmanifest` | Nombre, colores e iconos de la app instalada. |
 | `sw.js` | Guarda la app para que funcione sin internet. |
-| `icons/` | Iconos de la app. |
+| `icons/` | Iconos (incluido el adaptativo de Android). |
 
 ## Instalarla en el móvil
+
+Primero la app tiene que estar publicada (siguiente apartado). Cuando tengas la dirección:
 
 - **Android (Chrome):** abre la dirección, toca el menú ⋮ y elige **Instalar aplicación** o **Añadir a pantalla de inicio**.
 - **iPhone / iPad (Safari):** abre la dirección, toca **Compartir** y luego **Añadir a pantalla de inicio**.
@@ -25,15 +25,15 @@ Es una **app web instalable (PWA)**: no necesita compilación ni tienda de aplic
 
 Una vez instalada se abre a pantalla completa y funciona sin conexión, salvo la voz, que usa la del propio dispositivo.
 
+## Dónde está publicada
+
+Ya está publicada en <https://neiderpeko5-sketch.github.io/singapur-3d/> con GitHub Pages (rama `main`, carpeta `/`). Cada cambio subido aparece en la web en un minuto.
+
 ## Cómo usarla
 
 - Elige un juego en el menú superior. Numi, el personaje, explica qué hacer en voz alta y felicita al acertar; si lo tocas, repite la indicación.
 - 🔊 activa o silencia todo. ⛶ pone la escena a pantalla completa (se sale con ✕ o Esc).
 - El progreso (estrellas y nivel) se guarda en el propio dispositivo.
-
-## Publicación automática
-
-GitHub Pages publica desde la rama `main`: al subir un cambio, la nueva versión aparece sola en un minuto. No hay que hacer nada más.
 
 ## Notas
 
