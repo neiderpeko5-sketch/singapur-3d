@@ -1,6 +1,6 @@
 /* Singapur 3D para peques — service worker
    Guarda la app y la librería 3D para que funcione sin conexión. */
-const CACHE = 'singapur-3d-v2';
+const CACHE = 'singapur-3d-v3';
 const SHELL = [
   './',
   './index.html',
