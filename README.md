@@ -4,6 +4,10 @@ App de juegos 3D para aprender matemáticas con el método Singapur, pensada par
 
 Es una **app web instalable (PWA)**: no necesita compilación ni tienda de aplicaciones. Se instala desde el navegador y luego se abre como cualquier app, incluso sin conexión.
 
+## Abrir la app
+
+👉 https://neiderpeko5-sketch.github.io/singapur-3d/
+
 ## Qué hay en este repositorio
 
 | Archivo | Para qué sirve |
@@ -11,12 +15,10 @@ Es una **app web instalable (PWA)**: no necesita compilación ni tienda de aplic
 | `index.html` | Toda la app (juego, escena 3D, voz y sonido). |
 | `manifest.webmanifest` | Nombre, colores e iconos de la app instalada. |
 | `sw.js` | Guarda la app para que funcione sin internet. |
-| `icons/` | Iconos (incluido el adaptativo de Android). |
+| `icons/` | Iconos de la app. |
 | `.github/workflows/pages.yml` | Publica la app en GitHub Pages al subir cambios. |
 
 ## Instalarla en el móvil
-
-Primero la app tiene que estar publicada (siguiente apartado). Cuando tengas la dirección:
 
 - **Android (Chrome):** abre la dirección, toca el menú ⋮ y elige **Instalar aplicación** o **Añadir a pantalla de inicio**.
 - **iPhone / iPad (Safari):** abre la dirección, toca **Compartir** y luego **Añadir a pantalla de inicio**.
@@ -24,20 +26,15 @@ Primero la app tiene que estar publicada (siguiente apartado). Cuando tengas la 
 
 Una vez instalada se abre a pantalla completa y funciona sin conexión, salvo la voz, que usa la del propio dispositivo.
 
-## Publicarla en GitHub Pages
-
-1. Crea un repositorio nuevo en <https://github.com/new> (público, sin README).
-2. Sube el contenido de esta carpeta: en el repositorio, **Add file → Upload files**, arrastra todo (incluida la carpeta `icons` y `.github`).
-3. Ve a **Settings → Pages** y en *Source* elige **GitHub Actions**.
-4. En unos segundos la pestaña **Actions** mostrará la publicación terminada, y la dirección será `https://TU-USUARIO.github.io/TU-REPO/`.
-
-Desde ese momento, cada vez que cambies `index.html` y lo subas, la app se actualiza sola.
-
 ## Cómo usarla
 
 - Elige un juego en el menú superior. Numi, el personaje, explica qué hacer en voz alta y felicita al acertar; si lo tocas, repite la indicación.
 - 🔊 activa o silencia todo. ⛶ pone la escena a pantalla completa (se sale con ✕ o Esc).
 - El progreso (estrellas y nivel) se guarda en el propio dispositivo.
+
+## Publicación automática
+
+Cada vez que cambies `index.html` y lo subas a la rama `main`, la pestaña **Actions** publica la nueva versión en GitHub Pages. No hay que hacer nada más.
 
 ## Notas
 
